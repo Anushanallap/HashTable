@@ -41,8 +41,13 @@ package Hashtable;
 	        StringBuilder nodeString = new StringBuilder();
 	        nodeString.append("Node{" + "K=").append(key).append(" V=").append(value).append("}");
 	        if(next != null)
-	            nodeString.append("->").append(next);
-	        return nodeString.toString();
+	         
+			   nodeString.append("->").append(next);
+
+	       else {
+	        	nodeString.append("->").append(next);
+	    }
+		  return nodeString.toString();
 	    }
 	}
 
